@@ -47,10 +47,13 @@ function handleUp() {
       row = 7;
       col = 0;
       grid[row][col] = 4;
+      grid[1][4] = 2;
+      grid[3][2] = 2;
 
-      renderGrid(grid);
       let score = document.querySelector("#total-score");
       score.innerHTML = Number(score.innerHTML) + 1;
+
+      renderGrid(grid);
       return;
     }
 
